@@ -1,1 +1,10 @@
-This is a pipeline for the processing and filtering of RAD-Seq data with the end goal of identifying microhaplotypes (multi-SNP loci) that are informative for half-sibling and parent-offspring relationships.
+This page directs to a workflow for the processing and filtering of RAD-Seq data with the end goal of identifying microhaplotypes (multi-SNP loci) that are informative for half-sibling and parent-offspring relationships. 
+
+This workflow is split into three parts:
+1) Demultiplexing, cleaning and filtering of raw RAD data using Stacks and de novo locus identification. These steps are computationally intensive and best completed on a high performance computing cluster.
+2) Filtering for paralogs, missingness, HWE and heterozygosity in R.
+3) Identification and testing of multi-allelic microhaplotypes for kinship ID.
+
+The protocol and relevant scripts can be accessed via this link: https://hackmd.io/zs2YvRBqSg-G_9l-HLvvZw
+
+At present (September 2022), the scripts and workflow are primarily relevant for cownose rays (Rhinoptera bonasus) and other related species with similar (large) genome sizes and no reference genome. Eventually, this repository will house more generalized code and will be part of a tandem of repositories with instructions and scripts to run a close-kin mark-recapture experiment from start (fin clip) to finish (abundance estimate).
